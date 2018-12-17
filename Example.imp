@@ -1,0 +1,31 @@
+function int aToTheB (int a, int b){ 
+     int returner;
+     returner = 1;
+     int i;
+     while i < b {
+          returner = a * returner;
+          i = i+1
+     };
+     return returner
+}; 
+function int areaSquare(int s){
+     int area;
+     area = call aToTheB(s,2);
+     return area
+};
+function int areaTriangleRounded(int l,  int w){
+      int returner;
+      returner = (l*w)/2;
+      return returner
+};
+function bool testBool(bool a){
+     return a
+};
+int exponentExample;
+exponentExample = call aToTheB(5,10);
+int ourSquare;
+ourSquare = call areaSquare(20);
+int triangle;
+bool runTestBool;
+runTestBool = call testBool(False);
+triangle = call areaTriangleRounded(20, 30)
